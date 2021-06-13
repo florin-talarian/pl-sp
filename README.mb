@@ -1,0 +1,17 @@
+# Instructions: 
+  
+Create 2 gmail account.  
+the main gmail account place inside package.json under 'mainEmail'.  
+The second email (and all others) place under 'usersEmails' in an array [EMAIL, EMAIL..].  
+  
+Run npm install  
+  
+Run `node utils/createProfileDirectory.js`  
+Login into the main gmail account, do login for gmail, now open the profile directory ("Default") into user_profiles directory.  
+You can close the running script now.  
+  
+For each gmail account you want to use follow the instruction on and add API access for gmail, drive, spreadsheet  
+https://support.google.com/googleapi/answer/6158841?hl=en.  
+add an auth2 credentials (set application to desktop application).  
+download the credentials ans save them in the following format: "EMAIL_ADDRESS.credentials.json" in the root folder.  
+run `node ./utils/createToken.js` to create the token foe this email address.

@@ -1,0 +1,36 @@
+{
+  "name": "playwright-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "mainEmail": ,
+  "usersEmails": ,
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./runner",
+    "test-remote": "mocha 'tests/**/*.js' --timeout 120000 --require ./utils/hooks.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.824.0",
+    "chai": "^4.2.0",
+    "faker": "^5.5.3",
+    "google-spreadsheet": "^3.1.15",
+    "googleapis": "^72.0.0",
+    "googleapisNew": "npm:googleapis@^76.0.0",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5",
+    "mocha": "^8.2.1",
+    "module-alias": "^2.2.2",
+    "playwright": "^1.7.0",
+    "playwright-aws-lambda": "^0.6.0",
+    "playwright-core": "^1.7.1",
+    "retry-assert": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "_moduleAliases": {
+    "@s_api": "./utils/s_api",
+    "@g_api": "./utils/g_api",
+    "@helpers": "./utils/helpers"
+  }
+}
